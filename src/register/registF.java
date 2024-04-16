@@ -9,7 +9,7 @@ import config.dbConnector;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import testappnew.loginF;
+import admin.loginF;
 
 
 /**
@@ -85,6 +85,8 @@ public class registF extends javax.swing.JFrame {
         ut = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        ut1 = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(650, 450));
@@ -125,7 +127,7 @@ public class registF extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, -1, -1));
 
         jButton2.setText("Register");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +135,13 @@ public class registF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
+
+        ut1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Pending", "" }));
+        getContentPane().add(ut1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 190, -1));
+
+        jLabel8.setText("User Status");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -226,10 +234,12 @@ public class registF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JTextField ln;
     private javax.swing.JTextField mail;
     private javax.swing.JTextField pw;
     private javax.swing.JTextField us;
     private javax.swing.JComboBox<String> ut;
+    private javax.swing.JComboBox<String> ut1;
     // End of variables declaration//GEN-END:variables
 }

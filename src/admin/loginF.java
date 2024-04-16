@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testappnew;
+package admin;
 
 import admin.dashboard;
 import config.dbConnector;
@@ -31,6 +31,7 @@ public class loginF extends javax.swing.JFrame {
     static String fname;
     static String lname;
     
+    
     public static boolean loginAcc(String username, String password){
         
         
@@ -44,6 +45,7 @@ public class loginF extends javax.swing.JFrame {
                  type = resultSet.getString("u_type");
                  fname = resultSet.getString("u_fname");
                  lname = resultSet.getString("u_lname");
+                 
                return true;
                
            }else{
@@ -73,24 +75,25 @@ public class loginF extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(650, 450));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("LOG-IN FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 103, 35));
-        getContentPane().add(un, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 150, -1));
-        getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 150, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 210, 35));
+        getContentPane().add(un, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 200, -1));
+        getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 200, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("UserName");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("PassWord");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
 
         jButton1.setText("LOG-IN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +101,7 @@ public class loginF extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, -1, -1));
 
         jButton2.setText("REGISTER");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +109,7 @@ public class loginF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 230, 90, -1));
 
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -120,6 +123,13 @@ public class loginF extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 90, 20));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 120, 40));
+
+        jPanel2.setBackground(new java.awt.Color(153, 0, 153));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SCC-COLLEGE\\Downloads\\icons8-log-in-100.png")); // NOI18N
+        jPanel2.add(jLabel5);
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 610, 340));
 
         pack();
         setLocationRelativeTo(null);
@@ -210,7 +220,9 @@ public class loginF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField pw;
     private javax.swing.JTextField un;
     // End of variables declaration//GEN-END:variables

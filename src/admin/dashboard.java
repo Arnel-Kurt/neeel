@@ -6,7 +6,6 @@
 package admin;
 
 import javax.swing.JOptionPane;
-import testappnew.loginF;
 
 /**
  *
@@ -44,11 +43,11 @@ public class dashboard extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(650, 450));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/images.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 80, 90));
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SCC-COLLEGE\\Downloads\\admin nel.png")); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 100, 90));
 
         jButton2.setText("LOG-OUT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -58,22 +57,22 @@ public class dashboard extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
-        account_fname.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        account_fname.setFont(new java.awt.Font("Sylfaen", 1, 14)); // NOI18N
         account_fname.setText("ADMIN");
-        jPanel1.add(account_fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 50, 30));
+        jPanel1.add(account_fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 90, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 320));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(51, 255, 51));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel1.setText("ADMINDASHBOARD");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 163, 34));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 270, 34));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
-        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -82,16 +81,16 @@ public class dashboard extends javax.swing.JFrame {
         jPanel4.setLayout(null);
 
         jLabel4.setBackground(new java.awt.Color(0, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/users.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SCC-COLLEGE\\Downloads\\icon users nel.png")); // NOI18N
         jPanel4.add(jLabel4);
-        jLabel4.setBounds(60, 10, 50, 70);
+        jLabel4.setBounds(40, -10, 80, 80);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("USERS");
         jPanel4.add(jLabel5);
-        jLabel5.setBounds(60, 80, 50, 20);
+        jLabel5.setBounds(50, 70, 50, 20);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 180, 130));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 140, 110));
 
         pack();
         setLocationRelativeTo(null);
